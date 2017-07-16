@@ -75,7 +75,7 @@ class PlyrWidget extends \yii\base\Widget
         echo "\n" .Html::endTag($this->type);
 
         if (!empty($this->jsOptions)) {
-            $js = 'plyr.setup("#' . $this->options['id'] . ', ' . Json::encode($this->jsOptions). ');';
+            $js = 'plyr.setup("#' . $this->options['id'] . '", ' . Json::encode($this->jsOptions). ');';
             $this->view->registerJs($js);
         }
         else {
