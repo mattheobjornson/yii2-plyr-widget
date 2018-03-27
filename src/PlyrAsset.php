@@ -11,7 +11,7 @@ class PlyrAsset extends \yii\web\AssetBundle
     ];
 
     public $js = [
-        'plyr.js',
+        'plyr.min.js',
     ];
 
     public $depends = [
